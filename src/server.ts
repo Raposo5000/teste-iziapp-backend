@@ -13,8 +13,8 @@ server.get("/health", async (req, res) => {
 });
 
 const startServer = () => {
-  server.listen(process.env.HTTP_PORT, () =>
-    console.log(`server on: http://localhost:${process.env.HTTP_PORT}/health`)
+  server.listen(process.env.PORT, () =>
+    console.log(`server online!\n/health to check it!`)
   );
 };
 
